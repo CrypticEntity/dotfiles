@@ -1,0 +1,173 @@
+{
+  "Profiles": [
+    {
+      "Tablet": "Wacom CTL-472",
+      "OutputMode": {
+        "Path": "OpenTabletDriver.Desktop.Output.AbsoluteMode",
+        "Settings": [],
+        "Enable": true
+      },
+      "Filters": [
+        {
+          "Path": "HandSpeed.CustomFilter",
+          "Settings": [
+            {
+              "Property": "SpeedFormat",
+              "Value": "{0:N1}{1}/s"
+            },
+            {
+              "Property": "DistanceFormat",
+              "Value": "{0:N}{1}"
+            },
+            {
+              "Property": "ShowMetres",
+              "Value": false
+            },
+            {
+              "Property": "SaveGlobalDistance",
+              "Value": true
+            },
+            {
+              "Property": "RollingWindow",
+              "Value": 1000
+            },
+            {
+              "Property": "RateLimit",
+              "Value": 10
+            },
+            {
+              "Property": "ClearInterval",
+              "Value": 2000
+            },
+            {
+              "Property": "ServerUri",
+              "Value": "localhost:8073"
+            },
+            {
+              "Property": "BackgroundColor",
+              "Value": "#1C1B22"
+            },
+            {
+              "Property": "TextColor",
+              "Value": "#fff"
+            },
+            {
+              "Property": "Outline",
+              "Value": "1px solid #414141; outline-offset: -1px"
+            },
+            {
+              "Property": "BorderRounding",
+              "Value": "0.75rem"
+            },
+            {
+              "Property": "FontFamily",
+              "Value": "Inter"
+            },
+            {
+              "Property": "FontWeight",
+              "Value": "bold"
+            },
+            {
+              "Property": "FontSize",
+              "Value": "3rem"
+            },
+            {
+              "Property": "Title",
+              "Value": "Hand Speed"
+            },
+            {
+              "Property": "Width",
+              "Value": "20rem"
+            },
+            {
+              "Property": "CustomDivStyle",
+              "Value": ""
+            },
+            {
+              "Property": "CustomTitleStyle",
+              "Value": ""
+            },
+            {
+              "Property": "CustomDistanceStyle",
+              "Value": ""
+            },
+            {
+              "Property": "CustomSpeedStyle",
+              "Value": ""
+            }
+          ],
+          "Enable": true
+        }
+      ],
+      "AbsoluteModeSettings": {
+        "Display": {
+          "Width": 1920.0,
+          "Height": 1080.0,
+          "X": 960.0,
+          "Y": 540.0,
+          "Rotation": 0.0
+        },
+        "Tablet": {
+          "Width": 96.0,
+          "Height": 54.0,
+          "X": 48.0,
+          "Y": 27.0,
+          "Rotation": 0.0
+        },
+        "EnableClipping": true,
+        "EnableAreaLimiting": false,
+        "LockAspectRatio": false
+      },
+      "RelativeModeSettings": {
+        "XSensitivity": 20.0,
+        "YSensitivity": 20.0,
+        "RelativeRotation": 0.0,
+        "RelativeResetDelay": "00:00:00.1000000"
+      },
+      "Bindings": {
+        "TipActivationThreshold": 10.0,
+        "TipButton": {
+          "Path": "OpenTabletDriver.Desktop.Binding.MouseBinding",
+          "Settings": [
+            {
+              "Property": "Button",
+              "Value": "Left"
+            }
+          ],
+          "Enable": true
+        },
+        "EraserActivationThreshold": 0.0,
+        "EraserButton": null,
+        "PenButtons": [
+          {
+            "Path": "OpenTabletDriver.Desktop.Binding.KeyBinding",
+            "Settings": [
+              {
+                "Property": "Key",
+                "Value": "T"
+              }
+            ],
+            "Enable": true
+          },
+          {
+            "Path": "OpenTabletDriver.Desktop.Binding.KeyBinding",
+            "Settings": [
+              {
+                "Property": "Key",
+                "Value": "T"
+              }
+            ],
+            "Enable": true
+          }
+        ],
+        "AuxButtons": [],
+        "MouseButtons": [],
+        "MouseScrollUp": null,
+        "MouseScrollDown": null
+      }
+    }
+  ],
+  "LockUsableAreaDisplay": true,
+  "LockUsableAreaTablet": true,
+  "Tools": []
+}
