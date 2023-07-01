@@ -3,7 +3,6 @@
 # Hide welcome message
 set fish_greeting
 set VIRTUAL_ENV_DISABLE_PROMPT "1"
-set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
 
 # Set settings for https://github.com/franciscolourenco/done
@@ -82,14 +81,6 @@ function copy
     end
 end
 
-function fish_user_key_bindings
-  # ... bind \e\e 'thefuck-command-line'  # Bind EscEsc to thefuck
-  # ...
-end
-
-## Start Zoxide
-zoxide init fish | source
-
 
 ## Useful aliases
 # Replace ls with exa
@@ -101,7 +92,6 @@ alias l.="exa -a | egrep '^\.'"                                     # show only 
 alias p="sudo pacman"
 alias music="mpv ~/osuMusic"
 # Replace some more things with better alternatives
-alias cat='bat --style header --style rules --style snip --style changes --style header'
 [ ! -x /usr/bin/yay ] && [ -x /usr/bin/paru ] && alias yay='paru --bottomup'
 # Common use
 alias vim="nvim"
@@ -156,9 +146,3 @@ if type "wal" >> /dev/null 2>&1
 end
 
 
-## Run paleofetch if session is interactive
-if status --is-interactive
-   neofetch
-end
-
-thefuck --alias | source
